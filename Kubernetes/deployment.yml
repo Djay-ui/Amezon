@@ -1,0 +1,21 @@
+piVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Amazon-app
+  labels:
+    app: Amazon-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: Amazon-app
+  template:
+    metadata:
+      labels:
+        app: Amazon-app
+    spec:
+      containers:
+      - name: Amazon-app
+        image: dhananjaytupe748/amazon:latest
+        ports:
+        - containerPort: 80
