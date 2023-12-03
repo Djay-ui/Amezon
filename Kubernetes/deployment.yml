@@ -18,4 +18,4 @@ spec:
       - name: Amazon-app
         image: dhananjaytupe748/amazon:latest
         ports:
-        - containerPort: 80
+        - containerPort: 3000
